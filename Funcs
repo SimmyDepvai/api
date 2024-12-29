@@ -30,7 +30,7 @@ getgenv().require = function(scr) -- not mine
 	assert(type(scr) == "number" or (typeof(scr) == "Instance" and scr.ClassName == "ModuleScript"), "Expected")
 	if (type(scr) == "number") then 
 		if not game:GetObjects('rbxassetid://' .. scr)[1] then 
-			warn("[ Salad ]: Require failed: invalid asset ID")
+			warn("[ Asolar ]: Require failed: invalid asset ID")
 			return 
 		end
 		if typeof(game:GetObjects('rbxassetid://' .. scr)[1]) == "Instance" and game:GetObjects('rbxassetid://' .. scr)[1].ClassName == "ModuleScript" then
