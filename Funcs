@@ -38,10 +38,10 @@ getgenv().require = function(scr) -- not mine
 				if game:GetObjects('rbxassetid://' .. scr)[1].Source ~= "" then 
 					return loadstring(game:GetObjects('rbxassetid://' .. scr)[1].Source)()
 				else 
-					warn("[ Salad ]: Require failed: cant require a modulescript with no code")
+					warn("[ Asolar ]: Require failed: cant require a modulescript with no code")
 				end
 			else 
-				warn("[ Salad ]: Require failed: require asset id failed")
+				warn("[ Asolar ]: Require failed: require asset id failed")
 			end
 		end
 		return
